@@ -1,0 +1,47 @@
+.samples > h1 {
+  padding-bottom: 50px; }
+.samples .container {
+  padding: 0; }
+.samples .sample-left {
+  padding: 50px 0;
+  background-color: #f8f8f8;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7; }
+.samples .sample-right {
+  padding: 50px 0;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7; }
+.samples hr {
+  width: 200px;
+  border-top: 3px solid #e7e7e7; }
+.samples .section-heading {
+  line-height: 1.1;
+  margin: 0; }
+  .samples .section-heading a {
+    font-size: 30px; }
+.samples .section-subheading {
+  margin-top: 0;
+  color: #a5a5a5;
+  /*color: #b5b5b5;*/ }
+.samples .section-centent {
+  margin-top: 20px; }
+.samples .developer-notes {
+  color: #a5a5a5;
+  font-style: oblique; }
+.samples img {
+  width: 375px;
+  max-height: 250px;
+  margin-top: 60px; }
+
+/* Small devices (tablets, 768px and down) */
+@media (max-width: 768px) {
+  .samples > h1 {
+    padding-bottom: 10px; }
+  .samples .sample-left, .samples .sample-right {
+    padding: 35px 0; }
+  .samples .section-heading a {
+    font-size: 25px; }
+  .samples img {
+    width: 100%;
+    max-height: 250px;
+    margin-top: 5px; } }

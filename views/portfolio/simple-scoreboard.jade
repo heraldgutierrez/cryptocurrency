@@ -1,0 +1,31 @@
+extends ../layout
+
+block styles
+	link(rel='stylesheet', href='/css/project.css')
+
+block scripts
+	script(src='/js/background.js')
+	script(src='/js/project.js')
+
+block content
+	h1 Simplified Basketball Scoreboard
+	span.update (Last Updated: December 17, 2013)
+	div.external-links
+		a(href='http://scoreboard.heraldgutierrez.com/Simple') View Webpage
+		a(href='https://github.com/iheyroldy/Scoreboard') View Source on GitHub
+	a(href='http://scoreboard.heraldgutierrez.com/Simple')
+		div.img(data-primary='scoreboard.png' data-secondary='')
+		
+	div.description
+		h2 Description:
+		p A simple scoreboard that was made in a few hours. My family started a small basketball league that started February 1, 2014. This will be projected onto the wall since there is no scoreboard provided at the community centre.
+		
+		h2 Features:
+		ul
+			li 'Home' and 'Away' teams can be displayed as 'Black', 'Blue', 'Green', 'Red', White', or 'Yellow' teams.
+			li Game timer, which can be set to any time amount. Default is 20 mins.
+			li 24 second shot clock timer.
+			li Adding and Removing points
+			li Able to call 30 and 60 second timeouts. This will stop the shot clock and game clock timer, and disable all buttons so nothing can be altered.
+			li A timeout arrow is displayed to show who called the timeout.
+			li Keep track of fouls. Ensure when foul bonuses occur.

@@ -1,0 +1,32 @@
+extends ../layout
+
+block styles
+	link(rel='stylesheet', href='/css/project.css')
+
+block scripts
+	script(src='/js/background.js')
+	script(src='/js/project.js')
+
+block content
+	h1 LED Basketball Scoreboard
+	span.update (Last Updated: January 26, 2014)
+	div.external-links
+		a(href='http://scoreboard.heraldgutierrez.com/LED') View Webpage
+		a(href='https://github.com/iheyroldy/Scoreboard') View Source on GitHub
+	a(href='http://scoreboard.heraldgutierrez.com/LED')
+		div.img(data-primary='scoreboard-led.png' data-secondary='')
+		
+	div.description
+		h2 Description:
+		p An updated version of my simplified scoreboard. After making the simplified scoreboard, I wanted to see if I could make it look like an LED screen, similar to something you would see in real sporting events.
+		
+		h2 Features:
+		ul
+			li 'Home' and 'Away' teams can be displayed as 'Black', 'Blue', 'Green', 'Red', White', or 'Yellow' teams.
+			li Game timer, which can be set to any time amount. Default is 20 mins.
+			li 24 second shot clock timer.
+			li Adding and Removing points. Able to add one (1), two (2), or three (3) points, and remove one (1) point at a time.
+			li Only able to call 30 timeouts, and will have six (6) timeouts per quarter/half. Timeouts are the orange bars under each teams score. This will stop the shot clock and game clock timer, and disable all buttons so nothing can be altered.
+			li A timeout arrow is displayed to show who called the timeout.
+			li Keep track of fouls but doesn't display when a bonus occurs. That is decided upon the rules between the teams.
+			li Added a possession arrow, to indicate how has ball possession during a jump ball.
